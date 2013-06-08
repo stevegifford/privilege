@@ -12,7 +12,8 @@ article img {
 	 }
  
 #big {
-	height: 410px;
+	height: 400px;
+	width: 55%;
 	top: 15%;
  }
  
@@ -58,7 +59,8 @@ nav {
  
  
 p {
-	font-size: 13px;
+	font-size: 12px;
+	line-height: 1.9em;
 	 }
 
  
