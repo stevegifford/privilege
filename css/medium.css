@@ -3,8 +3,9 @@
  
 article {
 	width: 50%;
+	position: absolute;
 	top: 30%;
-	height: 280px; }
+	height: 270px; }
 	
 article img {
 	height: 40%;
