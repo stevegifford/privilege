@@ -1,0 +1,94 @@
+/* Mobile */
+ 
+ 
+article {
+	width: 80%;
+	padding: 10px;
+	margin: 0;
+	font-size: 30px; }
+	
+article img {
+	 }
+ 
+#big {
+ }
+ 
+ 
+body {
+	width: 100%;
+	height: 100%;
+ } 
+ 
+footer {
+	position: fixed;
+	bottom: 0;
+	z-index: 999;
+	width: 100%;
+	margin: 0;
+	font-size: 80%;
+	padding: 5px 0;
+	 }
+ 
+	footer nav ul li { margin: 0; }
+ 
+ 
+h3 {
+ }
+ 
+ 
+header {
+ }
+ 
+.lifestyle { display: none; }
+
+.logo { 
+	max-width: 80%;
+	clear: both;
+ }	
+ 
+.logo img {
+ }
+ 
+ 
+nav {
+ }
+ 
+	nav ul {
+ }
+ 
+		nav ul a {
+ }
+ 
+ 
+		nav ul li {	font-size: 90%; margin: 0; }
+ 
+ 
+p {
+	 }
+
+ 
+section {
+	 }
+ 
+ 
+.slideshow { max-width: 100%; margin-bottom: 100px; }
+ 
+.span1 { width: 75px; }
+.span2 { width: 4%; }
+.span3 { width: 200px; }
+.span4 { width: 80%; margin-left: 12px; }
+ 
+
+/* JS disabled styles */
+.no-js nav li:hover ul { display:block; }
+
+/* base nav styles */
+nav li { position:relative; float:left; list-style-type:none; z-index: 999; }
+nav ul:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+nav li a:focus { outline:none; text-decoration:underline; }
+nav li:first-child a { border-left:none; }
+nav li.last a { border-right:none; }
+nav a span { display:block; float:right; margin-left:5px; }
+nav ul ul { display:none; min-width:100%; position:absolute; left:0; top: 100%; background: rgba(15,21,33,0.7); margin: 0; padding: 20px 0 10px 0; }
+nav ul ul li { float:none; border-left: none; margin: 0; border-bottom: 1px dotted #fff; white-space: nowrap; margin: 0 10px; text-align: center; }
+nav ul ul a { font-size:14px; text-transform: lowercase; font-style: italic; }
