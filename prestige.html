@@ -8,12 +8,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel='stylesheet' media='all' href='css/privilege.css'>
 <link rel='stylesheet' media='all and (min-width: 768px) and (max-width: 1024px)' href='css/medium.css' >
+<link rel='stylesheet' media='all and (min-width: 320px) and (max-width: 480px)' href='css/small.css' >
 <!--[if IE]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <script src="js/jquery.js"></script>
 <script src="js/jquery.cycle.all.js"></script>
-<script src="js/jquery.mobile-1.3.1.min.js"></script>
+<script src="js/jquery.sidr.min.js"></script>
 <script>
 $(document).ready(function() {
     $('.slideshow').cycle({
@@ -59,16 +60,26 @@ function MM_changeProp(objId,x,theProp,theValue) { //v9.0
 <body class="no-js">
 <header>
 <nav id="topNav">
+<div class="logo"><a href="index.html"><img src="images/privilege_logo.gif" alt="Privilege" width="354" height="45" class="floatLeft" /></a></div>
+<a id="right-menu" href="#right-menu"><span>Menu</span></a>
+<script>
+$(document).ready(function() {
+    $('#right-menu').sidr({
+      name: 'sidr-right',
+      side: 'right'
+    });
+});
+</script>
+<div id="sidr-right">
 <ul>
-	<li class="logo"><a href="index.html"><img src="images/privilege_logo.gif" alt="Privilege" width="354" height="45" class="floatLeft" /></a></li>
-	<li><a href="">The Company</a>
+	<li><a href="" class="top-level">The Company</a>
 		<ul>
 			<li><a href="whatwedo.html">what we do</a></li>
 			<li><a href="theteam.html">the team</a></li>
 			<li><a href="ourpart.html">our responsibility</a></li>
 		</ul>
 	</li>
-	<li><a href="">The Services</a>
+	<li><a href="" class="top-level">The Services</a>
 		<ul>
 			<li><a href="travel.html">travel & leisure</a></li>
 			<li><a href="prestige.html">prestige purchases</a></li>
@@ -76,6 +87,7 @@ function MM_changeProp(objId,x,theProp,theValue) { //v9.0
 		</ul>
 	</li>
 </ul>
+</div>
 <div class="clear"></div>
 </nav>
 </header>
@@ -87,14 +99,15 @@ function MM_changeProp(objId,x,theProp,theValue) { //v9.0
 		<img src="images/2-WineBottles.jpg" width="200" height="147" class="right" alt="Wine Bottles" />
 		<h3>Prestige Purchases</h3>
 		<p>Before purchasing a significant or major item, trust us to provide you with a detailed breakdown of its design and background, price options, previous owners, safety records, estimated worth and long-term value. We'll furnish the specifics so you can make an educated decision whether the purchase is in your favor or not. Upon request we will act as your intermediary to negotiate your prestige purchase and promise to settle on a price that is both fair and equal in its value of the item for both parties.</p><p>Our relationships with top international auction houses such as Bonhams & Butterfields, Christies and Phillips de Pury also afford us the ability to source and obtain almost anything your heart desires. And if it's a special occasion or holiday gift you're after, our experts know exactly where to find unforgetable, bespoke items or whom to commission for that special something. </p>
+		<div class="clear"></div>
 	</article>
 </section>
 <footer>
 	<nav>
 	<ul>
-		<li class="span2"><a href="index.html">Home</a></li>
-		<li class="span2"><a href="tel:+1-310-770-7283">310-770-7283</a></li>
-		<li class="span2"><a href="mailto:info@privilegelm.com">Info@PrivilegeLM.com</a></li>
+		<li class="home"><a href="index.html"><span>Home</span></a></li>
+		<li class="phone"><a href="tel:+1-310-770-7283">310-770-7283</a></li>
+		<li class="email"><a href="mailto:info@privilegelm.com"><span>Info@PrivilegeLM.com</span></a></li>
 	</ul>
 	<div class="clear"></div>
 	</nav>

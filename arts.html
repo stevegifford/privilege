@@ -8,12 +8,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel='stylesheet' media='all' href='css/privilege.css'>
 <link rel='stylesheet' media='all and (min-width: 768px) and (max-width: 1024px)' href='css/medium.css' >
+<link rel='stylesheet' media='all and (min-width: 320px) and (max-width: 480px)' href='css/small.css' >
 <!--[if IE]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <script src="js/jquery.js"></script>
 <script src="js/jquery.cycle.all.js"></script>
-<script src="js/jquery.mobile-1.3.1.min.js"></script>
+<script src="js/jquery.sidr.min.js"></script>
 <script>
 $(document).ready(function() {
     $('.slideshow').cycle({
@@ -59,16 +60,26 @@ function MM_changeProp(objId,x,theProp,theValue) { //v9.0
 <body class="no-js">
 <header>
 <nav id="topNav">
+<div class="logo"><a href="index.html"><img src="images/privilege_logo.gif" alt="Privilege" width="354" height="45" class="floatLeft" /></a></div>
+<a id="right-menu" href="#right-menu"><span>Menu</span></a>
+<script>
+$(document).ready(function() {
+    $('#right-menu').sidr({
+      name: 'sidr-right',
+      side: 'right'
+    });
+});
+</script>
+<div id="sidr-right">
 <ul>
-	<li class="logo"><a href="index.html"><img src="images/privilege_logo.gif" alt="Privilege" width="354" height="45" class="floatLeft" /></a></li>
-	<li><a href="">The Company</a>
+	<li><a href="" class="top-level">The Company</a>
 		<ul>
 			<li><a href="whatwedo.html">what we do</a></li>
 			<li><a href="theteam.html">the team</a></li>
 			<li><a href="ourpart.html">our responsibility</a></li>
 		</ul>
 	</li>
-	<li><a href="">The Services</a>
+	<li><a href="" class="top-level">The Services</a>
 		<ul>
 			<li><a href="travel.html">travel & leisure</a></li>
 			<li><a href="prestige.html">prestige purchases</a></li>
@@ -76,6 +87,7 @@ function MM_changeProp(objId,x,theProp,theValue) { //v9.0
 		</ul>
 	</li>
 </ul>
+</div>
 <div class="clear"></div>
 </nav>
 </header>
@@ -88,14 +100,15 @@ function MM_changeProp(objId,x,theProp,theValue) { //v9.0
 		<h3>Arts & Entertainment</h3>
 		<p>Acting as your agent bestows you the opportunity to play no matter where you are in the world. We work to gain access to popular shows, private events, exclusive parties and restaurants in major cities around the world.</p>
 		<p>A strong supporter of the arts, we secure premium seating to sold out world-renowned musicals, operas, ballets and theatre performances as well as obtaining entry into exclusive gallery previews, movie premieres and private museum events. As a VIP, you can attend the most glamorous sporting events around the world like the Grand Prix of Monaco, Royal Ascot or the America's Cup. We'll also arrange reservations at many of the world's top restaurants.</p>
+		<div class="clear"></div>
 	</article>
 </section>
 <footer>
 	<nav>
 	<ul>
-		<li class="span2"><a href="index.html">Home</a></li>
-		<li class="span2"><a href="tel:+1-310-770-7283">310-770-7283</a></li>
-		<li class="span2"><a href="mailto:info@privilegelm.com">Info@PrivilegeLM.com</a></li>
+		<li class="home"><a href="index.html"><span>Home</span></a></li>
+		<li class="phone"><a href="tel:+1-310-770-7283">310-770-7283</a></li>
+		<li class="email"><a href="mailto:info@privilegelm.com"><span>Info@PrivilegeLM.com</span></a></li>
 	</ul>
 	<div class="clear"></div>
 	</nav>

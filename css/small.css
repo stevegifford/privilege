@@ -2,22 +2,32 @@
  
  
 article {
-	width: 80%;
-	padding: 10px;
+	width: 100%;
+	padding: 20px 0;
 	margin: 0;
-	font-size: 30px; }
+	position: static;
+	display: block;
+	 }
 	
 article img {
+	max-width: 35%;
+	height: auto;
 	 }
  
 #big {
+	padding: 20px 0;
+	margin: 0;
+	position: static;
+	top: 180px;
+	width: 100%;
  }
- 
  
 body {
 	width: 100%;
 	height: 100%;
  } 
+
+.email { }
  
 footer {
 	position: fixed;
@@ -26,58 +36,52 @@ footer {
 	width: 100%;
 	margin: 0;
 	font-size: 80%;
-	padding: 5px 0;
+	padding: 0;
 	 }
+	 
+	footer nav { padding: 5px 0 0 0; }
+	
+	footer nav ul { margin: 0; }
  
-	footer nav ul li { margin: 0; }
- 
+	footer nav ul li { float: left; margin: 0 15px 0 0; font-size: 100%; padding: 10px 0; }
  
 h3 {
  }
  
- 
-header {
- }
- 
+header { padding-top: 20px; }
+
+.home a { background: url('../images/home.png') 0 5px no-repeat; padding: 12px; margin-left: 5px; }
+	.home a span { display: none; }
+	 
 .lifestyle { display: none; }
 
+.left { float: right; margin: 0 0 10px 10px;}
+
 .logo { 
-	max-width: 80%;
-	clear: both;
+	height: auto;
+	margin: 0 25px;
+	width: 75%;	
  }	
  
 .logo img {
+	max-width: 100%;
+	height: auto;
  }
  
+nav { }
+	nav ul { margin-top: 0; }
+		nav ul a { }
+		nav ul li {	float: none; margin: 10px 0 0 0; border-left: none; }
  
-nav {
- }
- 
-	nav ul {
- }
- 
-		nav ul a {
- }
- 
- 
-		nav ul li {	font-size: 90%; margin: 0; }
- 
- 
-p {
-	 }
+p { }
+	 
+.phone { }
 
+section { margin-bottom: 30px; }
  
-section {
-	 }
- 
- 
-.slideshow { max-width: 100%; margin-bottom: 100px; }
- 
-.span1 { width: 75px; }
-.span2 { width: 4%; }
-.span3 { width: 200px; }
-.span4 { width: 80%; margin-left: 12px; }
- 
+.slideshow { max-width: 100%;  } 
+
+.top-level { border-bottom: 1px solid #fff; display: block; padding: 0 0 5px 0; }
 
 /* JS disabled styles */
 .no-js nav li:hover ul { display:block; }
@@ -89,6 +93,31 @@ nav li a:focus { outline:none; text-decoration:underline; }
 nav li:first-child a { border-left:none; }
 nav li.last a { border-right:none; }
 nav a span { display:block; float:right; margin-left:5px; }
-nav ul ul { display:none; min-width:100%; position:absolute; left:0; top: 100%; background: rgba(15,21,33,0.7); margin: 0; padding: 20px 0 10px 0; }
-nav ul ul li { float:none; border-left: none; margin: 0; border-bottom: 1px dotted #fff; white-space: nowrap; margin: 0 10px; text-align: center; }
-nav ul ul a { font-size:14px; text-transform: lowercase; font-style: italic; }
+nav ul ul { display:block; width:100%; margin: 0; padding: 0; position: static; }
+nav ul ul li { float:none; border-left: none; border-bottom: 1px dotted #fff; white-space: nowrap; margin: 0 10px; text-align: center; padding: 7px 0; }
+nav ul ul a { font-size:16px; text-transform: lowercase; font-style: italic; }
+
+/* Mobile Nav */
+#right-menu { display: block; position: absolute; top: 5px; right: 10px; background: url('../images/menu-bar.png') no-repeat; padding: 15px 22px; }
+#right-menu span { display: none; }
+.sidr{display:none;border-left: 1px solid #fff;position:absolute;position:fixed;top:0;height:100%;z-index:999999;width:270px;overflow-x:none;overflow-y:auto;font-size:15px;background:#0f1521;color:#fff;
+.sidr .sidr-inner{padding:0 0 15px}
+.sidr .sidr-inner>p{margin-left:15px;margin-right:15px}
+.sidr.right{left:auto;right:-260px}
+.sidr.left{left:-260px;right:auto}
+.sidr h1,.sidr h2,.sidr h3,.sidr h4,.sidr h5,.sidr h6{font-size:11px;font-weight:normal;padding:0 15px;margin:0 0 5px;color:#fff;line-height:24px;background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4d4d4d), color-stop(100%, #1a1a1a));background-image:-webkit-linear-gradient(#4d4d4d,#1a1a1a);background-image:-moz-linear-gradient(#4d4d4d,#1a1a1a);background-image:-o-linear-gradient(#4d4d4d,#1a1a1a);background-image:linear-gradient(#4d4d4d,#1a1a1a);-webkit-box-shadow:0 5px 5px 3px rgba(0,0,0,0.2);-moz-box-shadow:0 5px 5px 3px rgba(0,0,0,0.2);box-shadow:0 5px 5px 3px rgba(0,0,0,0.2)}.sidr p{font-size:13px;margin:0 0 12px}.sidr p a{color:rgba(255,255,255,0.9)}.sidr>p{margin-left:15px;margin-right:15px}.sidr ul{display:block;margin:0 0 15px;padding:0;border-top:1px solid #1a1a1a;border-bottom:1px solid #4d4d4d}.sidr ul li{display:block;margin:0;line-height:48px;border-top:1px solid #4d4d4d;border-bottom:1px solid #1a1a1a}
+.sidr ul li:hover,.sidr ul li.active,.sidr ul li.sidr-class-active{border-top:none;line-height:49px}
+.sidr ul li:hover>a,.sidr ul li:hover>span,.sidr ul li.active>a,.sidr ul li.active>span,.sidr ul li.sidr-class-active>a,.sidr ul li.sidr-class-active>span{-webkit-box-shadow:inset 0 0 15px 3px #222;-moz-box-shadow:inset 0 0 15px 3px #222;box-shadow:inset 0 0 15px 3px #222}
+.sidr ul li a,.sidr ul li span{padding:0 15px;display:block;text-decoration:none;color:#fff}
+.sidr ul li ul{border-bottom:none;margin:0}
+.sidr ul li ul li{line-height:40px;font-size:13px}
+.sidr ul li ul li:last-child{border-bottom:none}
+.sidr ul li ul li:hover,.sidr ul li ul li.active,.sidr ul li ul li.sidr-class-active{border-top:none;line-height:41px}
+.sidr ul li ul li:hover>a,.sidr ul li ul li:hover>span,.sidr ul li ul li.active>a,.sidr ul li ul li.active>span,.sidr ul li ul li.sidr-class-active>a,.sidr ul li ul li.sidr-class-active>span{-webkit-box-shadow:inset 0 0 15px 3px #222;-moz-box-shadow:inset 0 0 15px 3px #222;box-shadow:inset 0 0 15px 3px #222}
+.sidr ul li ul li a,.sidr ul li ul li span{color:rgba(255,255,255,0.8);padding-left:30px}
+.sidr form{margin:0 15px}
+.sidr label{font-size:13px}
+.sidr input[type="text"],.sidr input[type="password"],.sidr input[type="date"],.sidr input[type="datetime"],.sidr input[type="email"],.sidr input[type="number"],.sidr input[type="search"],.sidr input[type="tel"],.sidr input[type="time"],.sidr input[type="url"],.sidr textarea,.sidr select{width:100%;font-size:13px;padding:5px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0 0 10px;-webkit-border-radius:2px;-moz-border-radius:2px;-ms-border-radius:2px;-o-border-radius:2px;border-radius:2px;border:none;background:rgba(0,0,0,0.1);color:rgba(255,255,255,0.6);display:block;clear:both}
+.sidr input[type=checkbox]{width:auto;display:inline;clear:none}
+.sidr input[type=button],.sidr input[type=submit]{color:#333;background:#fff}
+.sidr input[type=button]:hover,.sidr input[type=submit]:hover{background:rgba(255,255,255,0.9)}

@@ -8,12 +8,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel='stylesheet' media='all' href='css/privilege.css'>
 <link rel='stylesheet' media='all and (min-width: 768px) and (max-width: 1024px)' href='css/medium.css' >
+<link rel='stylesheet' media='all and (min-width: 320px) and (max-width: 480px)' href='css/small.css' >
 <!--[if IE]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <script src="js/jquery.js"></script>
 <script src="js/jquery.cycle.all.js"></script>
-<script src="js/jquery.mobile-1.3.1.min.js"></script>
+<script src="js/jquery.sidr.min.js"></script>
 <script>
 $(document).ready(function() {
     $('.slideshow').cycle({
@@ -59,16 +60,26 @@ function MM_changeProp(objId,x,theProp,theValue) { //v9.0
 <body class="no-js">
 <header>
 <nav id="topNav">
+<div class="logo"><a href="index.html"><img src="images/privilege_logo.gif" alt="Privilege" width="354" height="45" class="floatLeft" /></a></div>
+<a id="right-menu" href="#right-menu"><span>Menu</span></a>
+<script>
+$(document).ready(function() {
+    $('#right-menu').sidr({
+      name: 'sidr-right',
+      side: 'right'
+    });
+});
+</script>
+<div id="sidr-right">
 <ul>
-	<li class="logo"><a href="index.html"><img src="images/privilege_logo.gif" alt="Privilege" width="354" height="45" class="floatLeft" /></a></li>
-	<li><a href="">The Company</a>
+	<li><a href="" class="top-level">The Company</a>
 		<ul>
 			<li><a href="whatwedo.html">what we do</a></li>
 			<li><a href="theteam.html">the team</a></li>
 			<li><a href="ourpart.html">our responsibility</a></li>
 		</ul>
 	</li>
-	<li><a href="">The Services</a>
+	<li><a href="" class="top-level">The Services</a>
 		<ul>
 			<li><a href="travel.html">travel & leisure</a></li>
 			<li><a href="prestige.html">prestige purchases</a></li>
@@ -76,6 +87,7 @@ function MM_changeProp(objId,x,theProp,theValue) { //v9.0
 		</ul>
 	</li>
 </ul>
+</div>
 <div class="clear"></div>
 </nav>
 </header>
@@ -84,17 +96,20 @@ function MM_changeProp(objId,x,theProp,theValue) { //v9.0
 		<img src="images/elephant.jpg" width="950" height="630" alt="elephant" />
 	</div>
 	<article id="big">
-		<img src="images/Official-cars.jpg" width="200" height="147" class="right" alt="cars" />
+		<div class="right">
+			<img src="images/Official-cars.jpg" width="200" height="147" class="right" alt="cars" />
+		</div>
 		<h3>Travel & Leisure</h3>
 		<p>We pride ourselves on our ability to intuitively seek out experiences that evoke wonderment, culture and emotion. Our team posesses a keen desire to explore the unknown and a strong talent for guiding clients' expectations towards a rare new light. Oftentimes behind the scene we're busy pushing boundaries, dipping into the favor pool and negotiating our way through doors that don't  exist yet.</p><p>How does dinner with a descendant of El Cid in his ancestral palace sound or entry into the magnificent Grand Kremlin Palace where the Russian president entertains visiting heads of state? On a less grandeur scale, perhaps a simple respite from the daily grind is in order; how about a countryside villa for the weekend boasting amenities fit for royalty or exclusive access to the chicest rooftop pool in town?  And should you be needing transportation, we'll see to it that your private car, jet or yacht befits the safety, style, class and comfort to which you are most accustomed.</p>
+		<div class="clear"></div>
 	</article>
 </section>
 <footer>
 	<nav>
 	<ul>
-		<li class="span2"><a href="index.html">Home</a></li>
-		<li class="span2"><a href="tel:+1-310-770-7283">310-770-7283</a></li>
-		<li class="span2"><a href="mailto:info@privilegelm.com">Info@PrivilegeLM.com</a></li>
+		<li class="home"><a href="index.html"><span>Home</span></a></li>
+		<li class="phone"><a href="tel:+1-310-770-7283">310-770-7283</a></li>
+		<li class="email"><a href="mailto:info@privilegelm.com"><span>Info@PrivilegeLM.com</span></a></li>
 	</ul>
 	<div class="clear"></div>
 	</nav>

@@ -1,6 +1,5 @@
 /* Tablet */
  
- 
 article {
 	width: 50%;
 	position: absolute;
@@ -16,15 +15,12 @@ article img {
 	width: 55%;
 	top: 0; }
  
- 
 body { width: 95%; } 
  
 footer { }
-	footer nav ul li { font-size: 16px; }
- 
+	footer nav ul li { font-size: 16px; margin-right: 140px; }
  
 h3 { }
- 
  
 header { }
 
@@ -34,7 +30,6 @@ header { }
 	margin-right: 40px; }	
  
 .logo img { }
- 
  
 nav { z-index: 999; }
  
@@ -54,13 +49,7 @@ section { }
  
  
 .slideshow { max-width: 100%; max-height: 420px; }
- 
-.span1 { width: 75px; }
-.span2 { width: 100px; margin-right: 110px; }
-.span3 { width: 220px; }
-.span4 { width: 320px; margin-left: -30px; margin-right: 30px; }
- 
-
+  
 /* JS disabled styles */
 .no-js nav li:hover ul { display:block; }
 
@@ -80,6 +69,16 @@ nav ul ul a { font-size:15px; text-transform: lowercase; font-style: italic;  }
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
+
+article {
+	width: 40%;
+	height: 170px;
+	top: 50%; }
+
+#big {
+	width: 40%;
+	top: 5%; }
+
 footer { position: fixed; bottom: 0; width: 95%;}
 
 .slideshow { max-height: 440px; }
