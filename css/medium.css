@@ -33,8 +33,7 @@ header { }
  
 nav { z-index: 999; }
  
-	nav ul {
-	background: #0f1521; }
+	nav ul { }
  
 		nav ul a {}
  

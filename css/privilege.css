@@ -1,7 +1,6 @@
 @font-face {
-	font-family: BodoniXT;
-	src: url(fonts/BodoniXT.ttf);
-	font-weight: 400; }
+	font-family: AllerLt;
+	src: url('../fonts/Aller_Lt.ttf'); }
 	
 /**
  * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
@@ -91,8 +90,11 @@ footer {
 	color: #fff;
 	border-top: 1px solid #826440;
 	font-size: 15px; }
- 
-	footer nav ul li { border-left: none; font-size: 18px; margin-right: 250px; }
+	
+	footer nav { background: rgba(15,21,33,0.9); }
+	footer nav ul { width: 280px; float: right; margin: 0 20px 10px 0; border-left: 1px dotted #826440; padding-left: 20px; }
+		footer nav ul li { font-family: AllerLt, Helvetica, Arial, sans-serif; border-left: none; font-size: 16px; float: left; vertical-align: top; padding: 0; margin:6px; line-height: 1em; }
+		footer nav ul li span { font-size: 10px; font-weight: bold; color: #84b778; margin-right: 10px; vertical-align: top; margin-top: 3px;}
 		footer nav ul li:last-child { margin-right: 0; }
  
  
@@ -110,6 +112,10 @@ header {
 	position: relative;
 	padding-top: 40px;
 	z-index: 999; }
+
+.home { float: right; margin: 10px 20px;}
+.home a { background: url('../images/home.png') 0 5px no-repeat; padding: 12px; margin-left: 5px; }
+	.home a span { display: none; }
 
 img, object { max-width: 100%; zoom: 1; }
 	
