@@ -79,7 +79,7 @@ p { }
 
 section { margin-bottom: 30px; }
  
-.slideshow { max-width: 100%;  } 
+.slideshow { max-width: 100%; max-height: 180px; } 
 
 .top-level { border-bottom: 1px solid #fff; display: block; padding: 0 0 5px 0; }
 
