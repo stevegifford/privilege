@@ -7,7 +7,7 @@ article {
 	margin: 0;
 	position: static;
 	display: block;
-	 }
+	height: auto; }
 	
 article img {
 	max-width: 35%;
@@ -77,9 +77,9 @@ p { }
 	 
 .phone { }
 
-section { margin-bottom: 30px; }
+section { margin-bottom: 30px; padding-bottom: 40px; }
  
-.slideshow { max-width: 100%; max-height: 180px; } 
+.slideshow { max-width: 100%; max-height: 280px; } 
 
 .top-level { border-bottom: 1px solid #fff; display: block; padding: 0 0 5px 0; }
 
@@ -94,8 +94,9 @@ nav li:first-child a { border-left:none; }
 nav li.last a { border-right:none; }
 nav a span { display:block; float:right; margin-left:5px; }
 nav ul ul { display:block; width:100%; margin: 0; padding: 0; position: static; }
-nav ul ul li { float:none; border-left: none; border-bottom: 1px dotted #fff; white-space: nowrap; margin: 0 10px; text-align: center; padding: 7px 0; }
-nav ul ul a { font-size:16px; text-transform: lowercase; font-style: italic; }
+nav ul ul li { float:none; border-left: none; border-bottom: 1px dotted #fff; white-space: nowrap; margin: 0 10px; text-align: center; padding: 5px 0; }
+nav ul ul a { font-size:16px; text-transform: lowercase; font-style: italic; display: block; padding: 5px; }
+nav ul ul a:active { color:#fff; background: #84b778; }
 
 /* Mobile Nav */
 #right-menu { display: block; position: absolute; top: 5px; right: 10px; background: url('../images/menu-bar.png') no-repeat; padding: 15px 22px; }
